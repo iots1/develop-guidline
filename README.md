@@ -1,1 +1,1 @@
-# develop-guidline
+# Code Standard Style IO TECH SOFT Part., Ltd.
