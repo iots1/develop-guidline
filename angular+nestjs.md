@@ -6,6 +6,17 @@
 - ตัวแปร public ใช้แบบ camel case
 - ตัวแปร enum ใช้ Upper case & snack case
 
+# รูปแบบตั้งชื่อ collection & field
+- รูปแบบ collection_field-name
+- กรณี Array collection_field-name_items (Array) หรือ collection_field-name พหุพจน์
+```
+users
+  user_first_name
+  user_last_name
+  user_email
+  user_ddresses (array)
+```
+
 # NestJS
 #### Module
 ``` typescript
