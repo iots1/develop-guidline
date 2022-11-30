@@ -13,7 +13,7 @@ Inject FormBuilder
   form: FormGroup
 ```
 
-สร้าง Method สำหรับ Initial Form
+สร้าง Method สำหรับ Initial Form (form control ชื่อควรตรงกับฐานข้อมูล)
 ``` typescript
   this.form = this._formBuilder.group({
     _id: [],
@@ -62,7 +62,7 @@ Inject FormBuilder
   /* ใช้ submit เพื่อบันทึกหรือแก้ไข form */
   onSubmit(): void {
      if (this.form.invalid) return this.form.markAllAsTouched();
-     /* call api save or edit */
+     /* Call api save or edit ใช้ค่าจาก form -> this.form.value */
   }
 ```
 
