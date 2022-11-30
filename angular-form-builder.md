@@ -68,7 +68,7 @@ Inject FormBuilder
 
 Ex. Template for component
 ``` html
-<form (submit)="onSubmit()"> 
+<form [formGroup]="form" (submit)="onSubmit()"> 
   <input formControlName="customer_first_name" />
   <input formControlName="customer_last_name" />
   ...
