@@ -140,14 +140,11 @@ export class MetersService extends MongoCRUD<MeterModel> {
 
 ```
 
-
 # Angular
 โครงสร้าง Module อย่างน้อยต้องมี 3 โฟลเดอร์ หากมี pipe directive หรืออื่นๆ ใช้เฉพาะ Module นั้นสามารถประกาศหรือสร้างเพิ่มเติมได้ ถ้าใช้ร่วมกันให้ประกาศไว้ที่ SharedModule
+- การตั้งชื่อ หน้าตาราง  **component_name**-list.ts
+- การตั้งชื่อ Popup หรือ Dialog กรอกข้อมูล ตั้งชื่อ dialog-**component_name**-form.ts
 ```
-*การตั้งชื่อ หน้าตาราง  component_name-list.ts
-*การตั้งชื่อ Popup หรือ Dialog กรอกข้อมูล ตั้งชื่อ dialog-component_name-form.ts
-
-
 ├── customers
     ├── dialogs (Optional)
         ├── dialog-customer-form.ts
