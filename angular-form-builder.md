@@ -13,7 +13,7 @@ Inject FormBuilder
   form: FormGroup
 ```
 
-สร้าง Method สำหรับ Initial Form (form control ชื่อควรตรงกับฐานข้อมูล)
+สร้าง form control ด้วย form builder (form control ชื่อควรตรงกับฐานข้อมูล)
 ``` typescript
   this.form = this._formBuilder.group({
     _id: [],
@@ -33,7 +33,7 @@ Inject FormBuilder
     customer_remark: [],
   })
 ```
-สร้าง Method OnInitForm แล้วเรียกใช้งาน
+สร้าง Method onInitForm แล้วเรียกใช้งาน
 ``` typescript
   ngOnInit(): void {
     this.onInitForm();
